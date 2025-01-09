@@ -1,0 +1,9 @@
+:root {
+    --font: 'Roboto';
+    --white: #fff;
+    --yellow: #f5b943;
+    --gray: #222;
+    --dark-gray: #171717;
+    --black: #000;
+    --max-width: 1440px;
+}
