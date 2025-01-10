@@ -111,44 +111,113 @@
     min-height: 100vh;
     background-color: #00000060;
     display: none;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999999;
 }
+.sign_active {
+    display: flex;
+}
 .sign__form {
-}
-.sign-up {
+    background: var(--dark-gray);
+    width: 600px;
     display: none;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 60px 50px;
+    border-radius: 14px;
 }
-.sign-in {
-    display: none;
+.sign__form.sign_active {
+    display: flex;
 }
 .sign__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sign__caption {
+    color: #ABABAB;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.sign__fields {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
 }
 .sign__field {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
 }
 .sign__field-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 .sign__field-title-span {
+    color: var(--red);
+    margin-left: 4px;
 }
 .sign__field-input {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    border-bottom: 1px solid #4C4C4C;
+    transition: var(--transition);
+}
+.sign__field-input:focus {
+    border-bottom: 1px solid var(--white);
 }
 .sign__create-pass {
-}
-.sign__field-input_create-pass {
+    width: 100%;
+    display: flex;
+    gap: 20px;
 }
 .sign__hint {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
 }
 .sign__hint-btn {
+    color: var(--yellow);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
 }
 .sign__hint-link {
+    color: var(--yellow);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
 }
 .sign__check-boxes {
+    margin: 50px auto 0 0;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
 }
 .sign__terms {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
 }
 .sign__terms-link {
+    color: var(--yellow);
 }
 .sign__check-box {
     font-weight: 400;
@@ -187,17 +256,50 @@
     opacity: 1;
 }
 .sign__check-box-span {
-    color: #F54343;
+    color: var(--red);
+    margin-left: 4px;
 }
 .sign__btn {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--white);
+    width: 100%;
+    padding: 18px 0;
+    margin-top: 40px;
+    border-radius: 10px;
 }
 .sign__alt {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
 }
 .sign__alt-title {
+    color: #ABABAB;
+    font-size: 16px;
+    font-weight: 400;
 }
 .sign__alt-btns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 .sign__alt-btn {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #4C4C4C;
+    border-radius: 6px;
 }
 
 .header {

@@ -36,24 +36,26 @@
         </nav>
 
         <div class="sign">
-            <form class="sign__form sign-up">
-                <h2 class="sign__title"></h2>
-                <div class="sign__field">
-                    <p class="sign__field-title">Username<span class="sign__field-title-span">*</span></p>
-                    <input class="sign__field-input" type="text">
-                </div>
-                <div class="sign__field">
-                    <p class="sign__field-title">Email</p>
-                    <input class="sign__field-input" type="text">
-                </div>
-                <div class="sign__create-pass">
+            <form class="sign__form">
+                <h2 class="sign__title">Register</h2>
+                <div class="sign__fields">
                     <div class="sign__field">
-                        <p class="sign__field-title">Password<span class="sign__field-title-span">*</span></p>
-                        <input class="sign__field-input sign__field-input_create-pass" type="text">
+                        <p class="sign__field-title">Username<span class="sign__field-title-span">*</span></p>
+                        <input class="sign__field-input" type="text" placeholder="Username">
                     </div>
                     <div class="sign__field">
-                        <p class="sign__field-title">Repeat Password<span class="sign__field-title-span">*</span></p>
-                        <input class="sign__field-input sign__field-input_create-pass" type="text">
+                        <p class="sign__field-title">Email</p>
+                        <input class="sign__field-input" type="text" placeholder="E-mail">
+                    </div>
+                    <div class="sign__create-pass">
+                        <div class="sign__field">
+                            <p class="sign__field-title">Password<span class="sign__field-title-span">*</span></p>
+                            <input class="sign__field-input" type="text" placeholder="Password">
+                        </div>
+                        <div class="sign__field">
+                            <p class="sign__field-title">Repeat Password<span class="sign__field-title-span">*</span></p>
+                            <input class="sign__field-input" type="text" placeholder="Repeat Password">
+                        </div>
                     </div>
                 </div>
                 <div class="sign__check-boxes">
@@ -84,18 +86,20 @@
                 </div>
             </form>
 
-            <form class="sign__form sign-in">
+            <form class="sign__form">
                 <h2 class="sign__title">Log in</h2>
                 <p class="sign__caption">We are glad to see you again!</p>
-                <div class="sign__field">
-                    <p class="sign__field-title">Email / Username<span class="sign__field-title-span">*</span></p>
-                    <input class="sign__field-input" type="text" placeholder="Email / Username">
-                    <p class="sign__hint">Do you need an account? <button class="sign__hint-btn" type="button">Register</button></p>
-                </div>
-                <div class="sign__field">
-                    <p class="sign__field-title">Password</p>
-                    <input class="sign__field-input" type="text" placeholder="Password">
-                    <a class="sign__hint-link" type="button">Register</a>
+                <div class="sign__fields">
+                    <div class="sign__field">
+                        <p class="sign__field-title">Email / Username<span class="sign__field-title-span">*</span></p>
+                        <input class="sign__field-input" type="text" placeholder="Email / Username">
+                        <p class="sign__hint">Do you need an account? <button class="sign__hint-btn" type="button">Register</button></p>
+                    </div>
+                    <div class="sign__field">
+                        <p class="sign__field-title">Password</p>
+                        <input class="sign__field-input" type="text" placeholder="Password">
+                        <a class="sign__hint-link" href="#">Forgot your password?</a>
+                    </div>
                 </div>
                 <div class="sign__check-boxes">
                     <label class="sign__check-box" for="keep-login">
