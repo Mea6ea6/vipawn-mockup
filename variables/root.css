@@ -5,6 +5,7 @@
     --gray: #222;
     --dark-gray: #171717;
     --black: #000;
+    --transition: 0.3s;
     --max-width: 1440px;
 }
 @media screen and (max-width: 1440px) {

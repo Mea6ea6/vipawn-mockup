@@ -9,7 +9,117 @@
 </head>
 <body class="background">
     <div class="page">
-        <nav class="navbar"></nav>
+        <nav class="navbar">
+            <a class="navbar__logo-link" href="#">
+                <img class="navbar__logo-icon" src="./images/navbar/__logo.svg" alt="vipawn">
+            </a>
+            <div class="navbar__sign-btns">
+                <button class="navbar__sign-btn navbar__sign-btn_log-in" type="button">Log in</button>
+                <button class="navbar__sign-btn navbar__sign-btn_reg-in" type="button">Sign up</button>
+            </div>
+            <div class="navbar__user-btns">
+                <a class="navbar__profile-btn" href="#">
+                    <img class="navbar__profile-img" src="./images/navbar/__user.png" alt="user">Hey,<span class="navbar__profile-span">User</span>
+                </a>
+                <button class="navbar__logout-btn" type="button">
+                    <img class="navbar__logout-icon" src="./images/navbar/__logout.svg" alt="logout">
+                </button>
+            </div>
+            <div class="navbar__menu-btns">
+                <a class="navbar__menu-btn navbar__menu-btn_like" href="#">
+                    <img class="navbar__menu-btn-icon" src="./images/navbar/__like.svg" alt="like">
+                </a>
+                <a class="navbar__menu-btn navbar__menu-btn_cart" href="#">
+                    <img class="navbar__menu-btn-icon" src="./images/navbar/__cart.svg" alt="cart">
+                </a>
+            </div>
+        </nav>
+
+        <div class="sign">
+            <form class="sign__form sign-up">
+                <h2 class="sign__title"></h2>
+                <div class="sign__field">
+                    <p class="sign__field-title">Username<span class="sign__field-title-span">*</span></p>
+                    <input class="sign__field-input" type="text">
+                </div>
+                <div class="sign__field">
+                    <p class="sign__field-title">Email</p>
+                    <input class="sign__field-input" type="text">
+                </div>
+                <div class="sign__create-pass">
+                    <div class="sign__field">
+                        <p class="sign__field-title">Password<span class="sign__field-title-span">*</span></p>
+                        <input class="sign__field-input sign__field-input_create-pass" type="text">
+                    </div>
+                    <div class="sign__field">
+                        <p class="sign__field-title">Repeat Password<span class="sign__field-title-span">*</span></p>
+                        <input class="sign__field-input sign__field-input_create-pass" type="text">
+                    </div>
+                </div>
+                <div class="sign__check-boxes">
+                    <p class="sign__terms">Vipawn may keep me informed with personalized emails about products and services. See our <a class="sign__terms-link" href="#">Privacy Policy</a> for more details.</p>
+                    <label class="sign__check-box" for="email">
+                        <input class="sign__check-box-input" type="checkbox" id="email" name="email" value="E-mail">
+                        Please contact me via e-mail
+                    </label>
+                    <label class="sign__check-box" for="terms">
+                        <input class="sign__check-box-input" type="checkbox" id="terms" name="terms" value="Terms">
+                        I have read and accept the Terms and Conditions <span class="sign__check-box-span">*</span>
+                    </label>
+                </div>
+                <button class="sign__btn">Create account</button>
+                <div class="sign__alt">
+                    <p class="sign__alt-title">Or register with</p>
+                    <div class="sign__alt-btns">
+                        <button class="sign__alt-btn">
+                            <img class="sign__alt-btn-icon" src="./images/sign/__google.svg" alt="Google">Google
+                        </button>
+                        <button class="sign__alt-btn">
+                            <img class="sign__alt-btn-icon" src="./images/sign/__facebook.svg" alt="Facebook">Facebook
+                        </button>
+                        <button class="sign__alt-btn">
+                            <img class="sign__alt-btn-icon" src="./images/sign/__twitter.svg" alt="Twitter">Twitter
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <form class="sign__form sign-in">
+                <h2 class="sign__title">Log in</h2>
+                <p class="sign__caption">We are glad to see you again!</p>
+                <div class="sign__field">
+                    <p class="sign__field-title">Email / Username<span class="sign__field-title-span">*</span></p>
+                    <input class="sign__field-input" type="text" placeholder="Email / Username">
+                    <p class="sign__hint">Do you need an account? <button class="sign__hint-btn" type="button">Register</button></p>
+                </div>
+                <div class="sign__field">
+                    <p class="sign__field-title">Password</p>
+                    <input class="sign__field-input" type="text" placeholder="Password">
+                    <a class="sign__hint-link" type="button">Register</a>
+                </div>
+                <div class="sign__check-boxes">
+                    <label class="sign__check-box" for="keep-login">
+                        <input class="sign__check-box-input" type="checkbox" id="keep-login" name="keep-login" value="keep-login">
+                        Keep me logged in
+                    </label>
+                </div>
+                <button class="sign__btn">Log in now</button>
+                <div class="sign__alt">
+                    <p class="sign__alt-title">Or sign in with</p>
+                    <div class="sign__alt-btns">
+                        <button class="sign__alt-btn">
+                            <img class="sign__alt-btn-icon" src="./images/sign/__google.svg" alt="Google">Google
+                        </button>
+                        <button class="sign__alt-btn">
+                            <img class="sign__alt-btn-icon" src="./images/sign/__facebook.svg" alt="Facebook">Facebook
+                        </button>
+                        <button class="sign__alt-btn">
+                            <img class="sign__alt-btn-icon" src="./images/sign/__twitter.svg" alt="Twitter">Twitter
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
         
         <header class="header">
             <a class="header__logo-link" href="#">
@@ -107,7 +217,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
@@ -131,7 +241,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
@@ -155,7 +265,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
@@ -179,7 +289,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
@@ -203,7 +313,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
@@ -227,7 +337,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
@@ -251,7 +361,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
@@ -275,7 +385,7 @@
                                 <button class="product__cart" type="button">Add to cart
                                     <img class="product__cart-icon" src="./images/product/__cart.svg" alt="cart">
                                 </button>
-                                <a class="product__view" src="#">Quick view</a>
+                                <a class="product__view" href="#">Quick view</a>
                             </div>
                         </div>
                     </li>
