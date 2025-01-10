@@ -7,3 +7,13 @@
     --black: #000;
     --max-width: 1440px;
 }
+@media screen and (max-width: 1440px) {
+    :root {
+        --max-width: 768px;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --max-width: 320px;
+    }
+}

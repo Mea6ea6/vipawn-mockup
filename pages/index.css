@@ -143,8 +143,8 @@
     flex-direction: column;
 }
 .monopoly__title {
-    width: 1340px;
-    height: 265px;
+    width: 100%;
+    height: auto;
     user-select: none;
 }
 .monopoly__items {
